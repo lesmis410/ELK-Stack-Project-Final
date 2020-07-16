@@ -1,5 +1,4 @@
-# Homework_13
-This repository contains the necessary files for the W13 homework: it is a collection of .yml playbooks used during an ELK Stack deployment (2), diagrams to illustrate networks in the cloud (2), and basic Linux scripts (2).
+This repository is a collection of .yml playbooks used during an ELK Stack deployment (2), diagrams to illustrate networks in the cloud (2), and basic Linux scripts (2).
 ELK-Stack
 
 This repo contains the ELK stack project conducted as part of Columbia Cybersecurity Bootcamp. It explores the deployment, purpose, and resources used to created the ELK stack.
