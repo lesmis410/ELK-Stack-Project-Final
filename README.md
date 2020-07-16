@@ -26,12 +26,12 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 
 Load balancing ensures that the application will be highly redundant, in addition to restricting traffic to the network.
 
-    _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box? The LB protects the availability of data, ensuring that traffic is spread evenly so as not to overwhelm the servers. The advantage of a jumpbox is that it is liminal,
+    What aspect of security do load balancers protect? What is the advantage of a jump box? The LB protects the availability of data, ensuring that traffic is spread evenly so as not to overwhelm the servers. The advantage of a jumpbox is that it is liminal,
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the machine and system logs.
 
-    _TODO: What does Filebeat watch for? Filebeat collects files about the data system, especially for modifications on the data system.
-    _TODO: What does Metricbeat record? Metricbeats collects machine metrics, such as the uptime that a machine has or CPU usage.
+    What does Filebeat watch for? Filebeat collects files about the data system, especially for modifications on the data system.
+  What does Metricbeat record? Metricbeats collects machine metrics, such as the uptime that a machine has or CPU usage.
 
 The configuration details of each machine may be found below.
 Name 	Function 	IP Address 	Operating System
@@ -56,11 +56,11 @@ Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 
-    _TODO: What is the main advantage of automating configuration with Ansible? The main advantage of automating configuration is that it is standardized across the resource group, as well as for future configurations.
+   What is the main advantage of automating configuration with Ansible? The main advantage of automating configuration is that it is standardized across the resource group, as well as for future configurations.
 
 The playbook implements the following tasks:
 
-    TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc.
+   In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc.
 
     Create a service VM for the ELK server
     In the Ansible container, create a playbook that installs Docker and run it on specified machines (i.e. elkservers).
@@ -72,15 +72,13 @@ Target Machines & Beats
 
 This ELK server is configured to monitor the following machines:
 
-    _TODO: 10.0.0.6 and 10.0.0.9
+  10.0.0.6 and 10.0.0.9
 
-We have installed the following Beats on these machines:
-
-    _TODO: Metricbeat and Filebeat
+We have installed the following Beats on these machines: Metricbeat and Filebeat
 
 These Beats allow us to collect the following information from each machine:
 
-    TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., Winlogbeat collects Windows logs, which we use to track user logon events, etc. Metricbeat: Metricbeat collects metrics, or measurement aspects of a system such as the uptime or the CPU usage of a machine. Filebeat: Filebeat is a “lightweight” log shipper that supports large amounts of data consumption. It is better at parsing information than Logstash but cannot replace it. Filebeat keeps the state of files (using Harvesters) to know if files were renamed or modified.
+ Metricbeat: Metricbeat collects metrics, or measurement aspects of a system such as the uptime or the CPU usage of a machine. Filebeat: Filebeat is a “lightweight” log shipper that supports large amounts of data consumption. It is better at parsing information than Logstash but cannot replace it. Filebeat keeps the state of files (using Harvesters) to know if files were renamed or modified.
 
 Using the Playbook
 
@@ -92,7 +90,7 @@ SSH into the control node and follow the steps below:
     Update the host file to include the IP address of the ELK server.
     Run the playbook, and navigate to the /etc/(i.e. filebeat) to check that the installation worked as expected.
 
-TODO: Answer the following questions to fill in the blanks:
+Answer the following questions to fill in the blanks:
 
     _Which file is the playbook? Where do you copy it? The playbook is my-playbook .yml file, and is copied to the /etc/ansible directory.
     _Which file do you update to make Ansible run the playbook on a specific machine? /etc/ansible/hosts
